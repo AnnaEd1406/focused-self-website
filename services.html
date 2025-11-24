@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Focused Self Collective</title>
+  <style>
+/* Focused Self Collective - Simple CSS - no frameworks */
+:root{
+  --sage: #9BB7A2;
+  --forest: #5F766A;
+  --sand: #EFE7DA;
+  --gold: #C9A86A;
+  --char: #3F4240;
+  --bg: #F7F9F7;
+  --maxw: 1000px;
+}
+*{box-sizing:border-box}
+body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:var(--char); background:var(--bg); line-height:1.45}
+.container{max-width:var(--maxw); margin:0 auto; padding:28px}
+.header{background:white; border-bottom:1px solid #eee; position:sticky; top:0; z-index:10}
+.header .inner{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px}
+.brand{display:flex; align-items:center; gap:12px}
+.logo{width:56px; height:56px; border-radius:12px; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; background:linear-gradient(135deg,var(--sage),var(--forest));}
+nav a{margin-left:12px; text-decoration:none; color:var(--char); font-weight:600; font-size:14px}
+.hero{display:flex; gap:24px; align-items:center; padding:40px 0}
+.hero .left{flex:1}
+.hero h1{font-family: 'Georgia', serif; font-size:28px; margin:0 0 12px}
+.ctas{margin-top:16px}
+.button{display:inline-block; padding:10px 16px; border-radius:999px; text-decoration:none; font-weight:700}
+.primary{background:var(--forest); color:white}
+.secondary{border:1px solid #ddd; background:white; color:var(--char)}
+.card-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:18px}
+.card{background:white; border-radius:12px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.04)}
+.section{padding:28px 0}
+.footer{padding:24px 0; border-top:1px solid #eee; margin-top:28px; color:#666; font-size:14px}
+.form-row{display:flex; gap:12px}
+.input, textarea{width:100%; padding:10px; border:1px solid #e5e7eb; border-radius:8px}
+.small{font-size:13px; color:#666}
+.price-grid{display:flex; gap:12px; flex-wrap:wrap}
+.price{background:white; padding:12px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.03); min-width:160px}
+@media(max-width:720px){ .hero{flex-direction:column} .header .inner{flex-direction:column; align-items:flex-start} nav a{margin-left:0; margin-right:10px} }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="container inner">
+      <div class="brand">
+        <div class="logo">FS</div>
+        <div>
+          <div style="font-weight:700">Focused Self Collective</div>
+          <div class="small">Integrative counselling & clinical supervision</div>
+        </div>
+      </div>
+      <nav aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="approaches.html">Approaches</a>
+        <a href="supervision.html">Supervision</a>
+        <a href="about.html">About</a>
+        <a href="fees.html">Fees</a>
+        <a href="contact.html" class="button primary">Book a Session</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+
+<section class="section">
+  <h2>Services</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h4>Children (5–11)</h4>
+      <div class="small">Play-based and creative methods, emotional regulation, behaviour, anxiety, transitions, grief. Work with parents/carers.</div>
+    </div>
+    <div class="card">
+      <h4>Young People (12–18)</h4>
+      <div class="small">Identity, emotional overwhelm, ADHD/ASD support, school anxiety, online & in-person options.</div>
+    </div>
+    <div class="card">
+      <h4>Adults</h4>
+      <div class="small">Stress, anxiety, trauma, relationships, low mood, burnout, transitions. Values-led therapy.</div>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="container footer">
+    <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap">
+      <div style="max-width:600px">
+        <strong>Focused Self Collective</strong>
+        <div class="small">Online integrative counselling & clinical supervision founded by Anna Edwards MBACP. Warm, trauma-informed support for children, young people, adults and practitioners.</div>
+      </div>
+      <div class="small">
+        Quick links:<br>
+        <a href="index.html">Home</a> • <a href="services.html">Services</a> • <a href="about.html">About</a> • <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:18px; color:#999">© 2025 Focused Self Collective — Anna Edwards MBACP. Not a crisis service.</div>
+  </footer>
+</body></html>

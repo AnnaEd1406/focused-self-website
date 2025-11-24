@@ -1,0 +1,34 @@
+
+Form integrations & embedding examples
+
+1) Formspree (simple)
+- Create a Formspree form at https://formspree.io, get the form endpoint id (e.g. https://formspree.io/f/xyz)
+- In contact.html the <form> action is set to Formspree. Replace {your_form_id} with the id.
+<form method="POST" action="https://formspree.io/f/xyz">
+  <input name="name">
+  ...
+</form>
+
+2) Netlify Forms
+- Netlify auto-handles forms if the static site is deployed on Netlify and the form has data-netlify="true"
+- Keep the method="POST" and include a hidden form-name input:
+<form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
+  ...
+</form>
+
+3) Calendly (embed booking widget)
+- Use Calendly to manage bookings; embed inline in contact page:
+<div class="calendly-inline-widget" data-url="https://calendly.com/yourname/45min" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+4) Form handling via Netlify Functions (advanced)
+- Use fetch to POST to your serverless function which then sends an email via an SMTP provider or third-party API (SendGrid, Mailgun).
+- Example client fetch snippet (replace /api/contact with your function endpoint):
+fetch('/api/contact', {
+  method:'POST', headers:{'Content-Type':'application/json'},
+  body: JSON.stringify({name,email,message})
+}).then(r=>r.json()).then(console.log)
+
+
+Netlify Function example available in /netlify_functions_example (contact.js)

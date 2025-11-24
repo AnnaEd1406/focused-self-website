@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style type="text/css"><![CDATA[
+      .bg { fill: #F7F9F7; }
+      .card { fill: #FFFFFF; stroke: #EFEFEF; stroke-width:1; rx:12; }
+      .primary { fill: #5F766A; }
+      .logo { font-weight:700; font-size:20px; font-family: 'Georgia', serif; fill: white; }
+      .h1 { font-family: 'Georgia', serif; font-size:34px; fill:#2f2f2f; }
+      .muted { font-size:14px; fill:#666666; }
+    ]]></style>
+  </defs>
+  <rect class="bg" width="100%" height="100%"/>
+  <rect x="40" y="30" width="1120" height="90" class="card" />
+  <g transform="translate(60,48)">
+    <rect x="0" y="0" width="70" height="70" rx="12" style="fill:linear-gradient(#9BB7A2,#5F766A)"/>
+    <text x="90" y="36" class="logo">Focused Self Collective</text>
+  </g>
+  <rect x="60" y="140" width="680" height="420" class="card" />
+  <text x="90" y="190" class="h1">Holistic therapy and supervision for meaningful change.</text>
+  <text x="90" y="230" class="muted">A calm space to explore, heal, and reconnect with yourself.</text>
+  <rect x="90" y="260" width="160" height="38" rx="20" class="primary"/>
+  <text x="170" y="286" text-anchor="middle" fill="#fff" style="font-weight:700;font-size:12px">Book a Consultation</text>
+  <rect x="260" y="260" width="160" height="38" rx="20" fill="#FFFFFF" stroke="#ddd"/>
+  <text x="340" y="286" text-anchor="middle" fill="#333" style="font-weight:700;font-size:12px">Learn About Services</text>
+
+  <!-- right image area -->
+  <rect x="760" y="140" width="360" height="260" class="card" />
+  <text x="940" y="260" text-anchor="middle" class="muted">Image / Illustration</text>
+
+  <!-- footer cards -->
+  <rect x="60" y="580" width="320" height="160" class="card" />
+  <text x="220" y="610" text-anchor="middle" style="font-weight:700">Children (5–11)</text>
+  <rect x="410" y="580" width="320" height="160" class="card" />
+  <text x="570" y="610" text-anchor="middle" style="font-weight:700">Young People (12–18)</text>
+  <rect x="760" y="580" width="320" height="160" class="card" />
+  <text x="920" y="610" text-anchor="middle" style="font-weight:700">Adults</text>
+</svg>
